@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   #get 'pages/about', to: 'pages#about'
   get 'about', to: 'pages#about'
 
+  resources :articles
 end
