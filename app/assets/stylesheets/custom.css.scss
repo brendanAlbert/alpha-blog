@@ -1,2 +1,89 @@
+$navbar-default-bg:#aaa;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: font-url("PressStart2P.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sketch_Block';
+    src: font-url("Sketch_Block.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+  font-family: /*'PressStart2P'*/'Sketch_Block', monospace;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing:-1px;
+  /*font-family: PressStart2P;*/
+  font-family: Sketch_Block;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  background-color: #ccc;
+}
+
+body {
+  /*font-family: PressStart2P;*/
+  font-family: Sketch_Block;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
