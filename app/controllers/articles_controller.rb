@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     if @article.save
-      flash[:success] = "Article was successfully created"
+      flash[:success] = "Great success!  I like!"
       redirect_to article_path(@article)
     else
       render 'new'
@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
   def update
     set_article
     if @article.update(article_params)
-      flash[:success] = "Article was successfully updated"
+      flash[:success] = "Great success!  I like!"
       redirect_to article_path(@article)
     else
       render 'edit'
