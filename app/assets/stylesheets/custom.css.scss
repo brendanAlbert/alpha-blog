@@ -94,6 +94,15 @@ html {
   padding-left: 0;
 }
 
+.badge {
+  background-color: #BBB;
+  text-transform: uppercase;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 body {
   /*font-family: PressStart2P;*/
   font-family: Sketch_Block;
