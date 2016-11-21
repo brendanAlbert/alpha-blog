@@ -1,5 +1,10 @@
 <h1 align="center">Listing All Categories</h1>
 <div align="center">
+  <div>
+    <% if logged_in? and current_user.admin? %>
+      <%= link_to "Create new category", new_category_path, class: "btn btn-xlarge btn-success" %>
+    <% end %>
+  </div>
   <%= will_paginate %>
   <% @categories.each do |category| %>
     <ul class="listing">
